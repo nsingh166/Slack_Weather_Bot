@@ -19,11 +19,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r Desktop/Local-Bot/requirements.txt
 
       - name: Run weather script
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           WEATHER_CITY: ${{ secrets.WEATHER_CITY }}
-        run: python daily_weather.py
+        run: python Desktop/Local-Bot/daily_weather.py
