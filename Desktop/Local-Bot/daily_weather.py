@@ -7,7 +7,7 @@ from slack_sdk import WebClient
 load_dotenv()
 
 SLACK_BOT_TOKEN = os.getenv("SLACK_BOT_TOKEN")
-SLACK_CHANNEL = os.getenv("SLACK_CHANNEL", "#ai-agent")
+SLACK_CHANNEL = os.getenv("SLACK_CHANNEL", "C0ALKP89QQP")
 WEATHER_CITY = os.getenv("WEATHER_CITY", "San Francisco")
 
 slack_client = WebClient(token=SLACK_BOT_TOKEN)
